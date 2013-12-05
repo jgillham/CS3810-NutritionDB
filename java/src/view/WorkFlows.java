@@ -61,7 +61,7 @@ public class WorkFlows {
     public static boolean viewDietitionPanel() {
         Session session = Session.getSession();
         if ( session.canPrescribe ) {
-            new dietitianhome( session.getFirstName(), session.getLastName() )
+            new FormDietitianMain( session.getFirstName(), session.getLastName() )
                     .setVisible(true);
             return true;
         }
@@ -74,7 +74,7 @@ public class WorkFlows {
     }
     public static void viewMealPlanner() {
         Session session = Session.getSession();
-        new usermain( session.getFirstName(), session.getLastName() )
+        new FormUserMain( session.getFirstName(), session.getLastName() )
                 .setVisible(true);
     }
     

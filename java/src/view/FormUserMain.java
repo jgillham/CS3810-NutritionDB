@@ -15,7 +15,7 @@ import model.DataBaseManager.NutritionFacts;
  *
  * @author ArcadeHitman
  */
-public class usermain extends javax.swing.JFrame {
+public class FormUserMain extends javax.swing.JFrame {
     private Session usession;
     private DataBaseManager db;
     private List< String > meals;
@@ -25,7 +25,7 @@ public class usermain extends javax.swing.JFrame {
     /**
      * Creates new form usermain
      */
-    public usermain( String fn, String ln) {
+    public FormUserMain( String fn, String ln) {
         initComponents();
         displayName.setText("Hello " + fn + " " + ln +".");
         this.usession = Session.getSession();
@@ -75,7 +75,7 @@ public class usermain extends javax.swing.JFrame {
       }
     }
     
-    public usermain(){
+    public FormUserMain(){
         initComponents();
     }
 
@@ -408,20 +408,20 @@ public class usermain extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(usermain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormUserMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(usermain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormUserMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(usermain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormUserMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(usermain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormUserMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new usermain().setVisible(true);
+                new FormUserMain().setVisible(true);
             }
         });
     }
