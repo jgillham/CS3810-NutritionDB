@@ -14,6 +14,9 @@ SOURCELISTING:
 	ln -fs ../java prj.link
 	mkdir -p gen
 	./get-source-listing.sh > gen/java-source-listing.tex
+fake:
+	mkdir -p gen
+	touch gen/java-source-listing.tex
 clean:
 	rm -f *.aux *.log *.pdf *.toc *.backup
 	rm -f prj.link
