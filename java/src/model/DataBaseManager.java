@@ -19,8 +19,21 @@ import java.util.logging.Logger;
  * @version 11-27-2013
  */
 public class DataBaseManager {    
+    /** Holds the reference to the singleton instance. */
     static private DataBaseManager instance = null;
     
+    /**
+     * Gets an active instance of the database connection if the connection
+     *  does not exist. Otherwise, the connection is created from the
+     *  connection URL.
+     *
+     * @param connectionURL the string that tells the driver how to connect to
+     *  the database.
+     *
+     * @return An instance of the database.
+     *
+     * @throws SQLException when connecting to the database fails.
+     */
     static public DataBaseManager getDataBase( String connectionURL )
             throws SQLException {
         if ( instance == null ) {
@@ -30,6 +43,11 @@ public class DataBaseManager {
         
     }
     
+    /**
+     * Gets the active instance of the database. Otherwise, a null is returned.
+     *
+     * @return The database instance or null.
+     */
     static public DataBaseManager getDataBase( ) {
         return instance;
     }
@@ -106,6 +124,12 @@ public class DataBaseManager {
         return result;
     }
     
+    /**
+     * Checks the database and tests if the given user has dietitian
+     *  privileges.
+     *
+     * @return True if the user is a dietitian or false otherwise.
+     */
     public boolean testCanPrescribe( String uname ) {
         String sqlStatement2 = "SELECT DIETITION.USER_ID" +
                     " FROM DIETITION NATURAL JOIN USERS WHERE " +
@@ -300,3 +324,4 @@ public class DataBaseManager {
         this.dispose();
     }
 }
+
