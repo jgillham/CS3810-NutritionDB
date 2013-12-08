@@ -366,7 +366,7 @@ public class usermain extends javax.swing.JFrame {
     }//GEN-LAST:event_btnViewDietaryRecommendationActionPerformed
 
     private void btnPreferencesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPreferencesActionPerformed
-        // TODO add your handling code here:
+        WorkFlows.viewUserPreferences();
     }//GEN-LAST:event_btnPreferencesActionPerformed
 
   private void btnMealBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMealBackActionPerformed

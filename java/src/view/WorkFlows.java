@@ -91,4 +91,11 @@ public class WorkFlows {
         new usermain( session.getFirstName(), session.getLastName() )
                 .setVisible(true);
     }
+    
+    /**
+     * Displays the user's preferences.
+     */
+    public static void viewUserPreferences() {
+        new userpref().setVisible(true);
+    }
 }
