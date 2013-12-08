@@ -58,6 +58,12 @@ public class WorkFlows {
         return false;
     }
     
+    /**
+     * Checks to make sure the user can access and then launches the form
+     *  with the dietitian controls.
+     *
+     * @return True if the user is a dietitian or false otherwise.
+     */
     public static boolean viewDietitionPanel() {
         Session session = Session.getSession();
         if ( session.canPrescribe ) {
@@ -67,16 +73,22 @@ public class WorkFlows {
         }
         return false;
     }
-    
+   
+    /**
+     * Signals to the session that the user has logged out and shows the login
+     *  form.
+     */
     public static void signOut() {
         Session.signOut();
         new view.login().setVisible(true);
     }
+
+    /**
+     * Displays the user meal planner.
+     */
     public static void viewMealPlanner() {
         Session session = Session.getSession();
         new usermain( session.getFirstName(), session.getLastName() )
                 .setVisible(true);
     }
-    
-    
 }
