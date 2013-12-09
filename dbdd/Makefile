@@ -6,7 +6,7 @@ SOURCE_LINE_COUNT_REPORT=$(GENFOLDER)/source-line-count.txt
 SOURCELISTING=$(GENFOLDER)/java-source-listing.tex
 
 view: compile
-	gnome-open $(OBJ)
+	gnome-open $(OBJ) || open $(OBJ)
 
 compile: $(SOURCE_LINE_COUNT_REPORT) $(SOURCELISTING) $(OBJ)
 
