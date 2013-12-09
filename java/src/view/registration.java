@@ -56,6 +56,7 @@ public class registration extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        bgrpMaleFemale = new javax.swing.ButtonGroup();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -147,6 +148,7 @@ public class registration extends javax.swing.JFrame {
             }
         });
 
+        bgrpMaleFemale.add(rbtnMale);
         rbtnMale.setText("Male");
         rbtnMale.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -154,6 +156,7 @@ public class registration extends javax.swing.JFrame {
             }
         });
 
+        bgrpMaleFemale.add(rbtnFemale);
         rbtnFemale.setText("Female");
         rbtnFemale.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -365,6 +368,7 @@ public class registration extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
     private javax.swing.JButton btnRegister;
+    private javax.swing.ButtonGroup bgrpMaleFemale;
     private javax.swing.JTextField email;
     private javax.swing.JTextField fn;
     private javax.swing.JLabel jLabel1;
