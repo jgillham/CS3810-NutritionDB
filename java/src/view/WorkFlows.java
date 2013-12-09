@@ -67,7 +67,7 @@ public class WorkFlows {
     public static boolean viewDietitionPanel() {
         Session session = Session.getSession();
         if ( session.canPrescribe ) {
-            new dietitianhome( session.getFirstName(), session.getLastName() )
+            new FormDietitianMain( session.getFirstName(), session.getLastName() )
                     .setVisible(true);
             return true;
         }
@@ -80,7 +80,7 @@ public class WorkFlows {
      */
     public static void signOut() {
         Session.signOut();
-        new view.login().setVisible(true);
+        new FormLogin().setVisible(true);
     }
 
     /**
@@ -88,7 +88,7 @@ public class WorkFlows {
      */
     public static void viewMealPlanner() {
         Session session = Session.getSession();
-        new usermain( session.getFirstName(), session.getLastName() )
+        new FormUserMain( session.getFirstName(), session.getLastName() )
                 .setVisible(true);
     }
     
@@ -96,6 +96,6 @@ public class WorkFlows {
      * Displays the user's preferences.
      */
     public static void viewUserPreferences() {
-        new userpref().setVisible(true);
+        new FormUserPreferences().setVisible(true);
     }
 }

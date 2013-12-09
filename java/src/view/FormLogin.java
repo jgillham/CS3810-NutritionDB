@@ -13,12 +13,12 @@ import model.DataBaseManager;
  *
  * @author ArcadeHitman
  */
-public class login extends javax.swing.JFrame {
+public class FormLogin extends javax.swing.JFrame {
     
     /**
      * Creates new form NutritionDB
      */
-    public login() {
+    public FormLogin() {
         initComponents();
     }
 
@@ -184,7 +184,7 @@ public class login extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnSignInActionPerformed
 
     private void BtnRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnRegisterActionPerformed
-        registration form = new registration("");
+        FormRegistration form = new FormRegistration("");
         form.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_BtnRegisterActionPerformed

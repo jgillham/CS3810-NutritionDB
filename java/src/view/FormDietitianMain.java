@@ -10,12 +10,12 @@ import control.Session;
  *
  * @author ArcadeHitman
  */
-public class dietitianhome extends javax.swing.JFrame {
+public class FormDietitianMain extends javax.swing.JFrame {
 
     /**
      * Creates new form dietitianhome
      */
-    public dietitianhome( String fn, String ln ) {
+    public FormDietitianMain( String fn, String ln ) {
         initComponents();
         this.displayName.setText("Hello " + fn + " " + ln +".");
     }
@@ -78,12 +78,12 @@ public class dietitianhome extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Patients");
-        jLabel1.setBorder(new javax.swing.border.SoftBevelBorder(0));
+        jLabel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jLabel1.setOpaque(true);
 
         jPanel1.setBackground(new java.awt.Color(246, 246, 246));
-        jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(0));
+        jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jLabel5.setText("Patient #2");
 
@@ -113,7 +113,7 @@ public class dietitianhome extends javax.swing.JFrame {
         );
 
         jPanel2.setBackground(new java.awt.Color(246, 246, 246));
-        jPanel2.setBorder(new javax.swing.border.SoftBevelBorder(0));
+        jPanel2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jLabel4.setText("Etc. etc. etc...");
 
@@ -143,7 +143,7 @@ public class dietitianhome extends javax.swing.JFrame {
         );
 
         jPanel3.setBackground(new java.awt.Color(246, 246, 246));
-        jPanel3.setBorder(new javax.swing.border.SoftBevelBorder(0));
+        jPanel3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jLabel7.setText("Patient #3");
 
@@ -258,13 +258,13 @@ public class dietitianhome extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(dietitianhome.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormDietitianMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(dietitianhome.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormDietitianMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(dietitianhome.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormDietitianMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(dietitianhome.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormDietitianMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
@@ -272,7 +272,7 @@ public class dietitianhome extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new dietitianhome("","").setVisible(true);
+                new FormDietitianMain("","").setVisible(true);
             }
         });
     }

@@ -8,12 +8,12 @@ package view;
  *
  * @author ArcadeHitman
  */
-public class userrestriction extends javax.swing.JFrame {
+public class FormUserRestrictions extends javax.swing.JFrame {
 
     /**
-     * Creates new form userrestriction
+     * Creates new form FormUserRestrictions
      */
-    public userrestriction() {
+    public FormUserRestrictions() {
         initComponents();
     }
 
@@ -95,20 +95,20 @@ public class userrestriction extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(userrestriction.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormUserRestrictions.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(userrestriction.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormUserRestrictions.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(userrestriction.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormUserRestrictions.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(userrestriction.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormUserRestrictions.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new userrestriction().setVisible(true);
+                new FormUserRestrictions().setVisible(true);
             }
         });
     }

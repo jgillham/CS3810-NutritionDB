@@ -10,12 +10,12 @@ import model.DataBaseManager;
  * @author Josh Gillham, Randy Mangel, Sann Voun, Daniel Eason
  * @version 12-08-2013
  */
-public class registration extends javax.swing.JFrame {
+public class FormRegistration extends javax.swing.JFrame {
 
     /**
      * Creates new form registration
      */
-    public registration() {
+    public FormRegistration() {
         initComponents();
         this.enableRegisterButton();
     }
@@ -23,7 +23,7 @@ public class registration extends javax.swing.JFrame {
     /**
      * Creates new form registration
      */
-    public registration(String url) {
+    public FormRegistration(String url) {
         initComponents();
         this.enableRegisterButton();
     }
@@ -285,7 +285,7 @@ public class registration extends javax.swing.JFrame {
                 db.runUpdateStatement(sqlAddEmail);
                 System.out.println("You been added to the table.");
                 if ( !WorkFlows.login(rootPane, userName, passkey ) ) {
-                    new login().setVisible(true);
+                    new FormLogin().setVisible(true);
                 }
                 this.dispose();
             } else {
@@ -299,7 +299,7 @@ public class registration extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRegisterActionPerformed
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
-        new login().setVisible(true);
+        new FormLogin().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnBackActionPerformed
 
@@ -348,27 +348,27 @@ public class registration extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(registration.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormRegistration.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(registration.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormRegistration.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(registration.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormRegistration.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(registration.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormRegistration.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new registration().setVisible(true);
+                new FormRegistration().setVisible(true);
             }
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup bgrpMaleFemale;
     private javax.swing.JButton btnBack;
     private javax.swing.JButton btnRegister;
-    private javax.swing.ButtonGroup bgrpMaleFemale;
     private javax.swing.JTextField email;
     private javax.swing.JTextField fn;
     private javax.swing.JLabel jLabel1;

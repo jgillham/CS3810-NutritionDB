@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.sql.SQLNonTransientConnectionException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import view.login;
+import view.FormLogin;
 
 /**
  *
@@ -44,7 +44,7 @@ public class DesktopGUI {
             ex.printStackTrace();
             System.exit( 3 );
         }
-        login form = new login();
+        FormLogin form = new FormLogin();
         form.setVisible(true);
         System.out.println("the db url is " + DB_URL);
     }
