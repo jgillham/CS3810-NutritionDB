@@ -232,7 +232,7 @@ public class dietitianhome extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void btnSignOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSignOutActionPerformed
-        Session.signOut();
+        WorkFlows.signOut();
         this.dispose();
     }//GEN-LAST:event_btnSignOutActionPerformed
 
