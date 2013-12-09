@@ -450,6 +450,29 @@ How to use Oracle SQL Data Modeler.
 How to use Spiral Development.
 \end{enumerate}
 \end{mySubsection}
+\begin{mySubsection}{Security Considerations}
+We considered the security of both the data base and the Java application.
+A hacker could compromise the Java application by injecting malicious byte code.
+The application could not protect the data base from illegitimate logins.
+A second tier authentication is needed on the data base level to fend off such attacks.
+Thus, the data base and the Java application would both have separate login processes.
+\newline
+
+We considered the login process further.
+If the Java application sends the password to the data base
+or if the Java application retrieves the password from the data base
+then the password can be intercepted via man-in-the-middle attacks.
+We need a way to hide the password as it propagates through the network.
+Hashing the password would prevent the hacker from discovering the original password.
+\newline
+
+Another benefit to hashing the password is internal security.
+Imagine a database administrator discovers that he can read everyone's passwords.
+He could use login credentials to look at users' private information.
+He could sell login credentials to hackers.
+Hashing passwords would prevent company employees from discovering user passwords.
+
+\end{mySubsection}
 \section{Detailed Data Base Design}
 \begin{mySubsection}{Entities}
 \input{res/entities.tex}
